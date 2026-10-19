@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow - To-Do List</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="logo">✓</div>
+      <h1>TaskFlow</h1>
+      <p>Your day, organized.</p>
+    </header>
+
+    <section class="task-section">
+      <h2>Get things done.</h2>
+      <p class="subtitle">Small steps, big progress.</p>
+
+      <div class="stats">
+        <div class="stat-card">
+          <span>Total Tasks</span>
+          <h3 id="total-count">0</h3>
+        </div>
+
+        <div class="stat-card">
+          <span>Completed</span>
+          <h3 id="completed-count">0</h3>
+        </div>
+
+        <div class="stat-card">
+          <span>Pending</span>
+          <h3 id="pending-count">0</h3>
+        </div>
+      </div>
+
+      <form id="task-form" class="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Add a new task..."
+          autocomplete="off"
+          aria-label="New task"
+        />
+        <button type="submit">+ Add Task</button>
+      </form>
+
+      <ul id="task-list" class="task-list"></ul>
+
+      <p id="empty-message" class="empty-message">
+        No tasks yet. Add your first task!
+      </p>
+
+      <button id="clear-completed" class="clear-button" type="button">
+        Clear Completed
+      </button>
+    </section>
+
+    <footer>
+      <p>Stay focused. Keep moving forward. 🚀</p>
+    </footer>
+  </main>
+</body>
+</html>
